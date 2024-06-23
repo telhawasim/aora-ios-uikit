@@ -13,6 +13,7 @@
 		09876ADA2C28C3FB00AAEF66 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 09876AD92C28C3FB00AAEF66 /* Base */; };
 		09876ADC2C28C3FC00AAEF66 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 09876ADB2C28C3FC00AAEF66 /* Assets.xcassets */; };
 		09876ADF2C28C3FC00AAEF66 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 09876ADE2C28C3FC00AAEF66 /* Base */; };
+		BD822AAA9B121637412B3EBD /* Pods_aora_ios_uikit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23DF541AA61449F28CC85D82 /* Pods_aora_ios_uikit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,9 @@
 		09876ADB2C28C3FC00AAEF66 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		09876ADE2C28C3FC00AAEF66 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		09876AE02C28C3FC00AAEF66 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		23DF541AA61449F28CC85D82 /* Pods_aora_ios_uikit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_aora_ios_uikit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		369F58EC492F9B755806B6D6 /* Pods-aora-ios-uikit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-aora-ios-uikit.release.xcconfig"; path = "Target Support Files/Pods-aora-ios-uikit/Pods-aora-ios-uikit.release.xcconfig"; sourceTree = "<group>"; };
+		4608FFED7EA6CED3A180EF6E /* Pods-aora-ios-uikit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-aora-ios-uikit.debug.xcconfig"; path = "Target Support Files/Pods-aora-ios-uikit/Pods-aora-ios-uikit.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +35,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BD822AAA9B121637412B3EBD /* Pods_aora_ios_uikit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0665034ACA4B1310776D9729 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4608FFED7EA6CED3A180EF6E /* Pods-aora-ios-uikit.debug.xcconfig */,
+				369F58EC492F9B755806B6D6 /* Pods-aora-ios-uikit.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		09876AC62C28C3FB00AAEF66 = {
 			isa = PBXGroup;
 			children = (
 				09876AD12C28C3FB00AAEF66 /* aora-ios-uikit */,
 				09876AD02C28C3FB00AAEF66 /* Products */,
+				0665034ACA4B1310776D9729 /* Pods */,
+				88F4A6C48566DE97016BF2F6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +84,14 @@
 			path = "aora-ios-uikit";
 			sourceTree = "<group>";
 		};
+		88F4A6C48566DE97016BF2F6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				23DF541AA61449F28CC85D82 /* Pods_aora_ios_uikit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,6 +99,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 09876AE32C28C3FC00AAEF66 /* Build configuration list for PBXNativeTarget "aora-ios-uikit" */;
 			buildPhases = (
+				BB0681B72A4CA4CC14258825 /* [CP] Check Pods Manifest.lock */,
 				09876ACB2C28C3FB00AAEF66 /* Sources */,
 				09876ACC2C28C3FB00AAEF66 /* Frameworks */,
 				09876ACD2C28C3FB00AAEF66 /* Resources */,
@@ -132,6 +158,31 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		BB0681B72A4CA4CC14258825 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-aora-ios-uikit-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		09876ACB2C28C3FB00AAEF66 /* Sources */ = {
@@ -287,6 +338,7 @@
 		};
 		09876AE42C28C3FC00AAEF66 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4608FFED7EA6CED3A180EF6E /* Pods-aora-ios-uikit.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -315,6 +367,7 @@
 		};
 		09876AE52C28C3FC00AAEF66 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 369F58EC492F9B755806B6D6 /* Pods-aora-ios-uikit.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

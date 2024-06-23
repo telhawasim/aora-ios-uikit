@@ -1,0 +1,6 @@
+framework module Pods_aora_ios_uikit {
+  umbrella header "Pods-aora-ios-uikit-umbrella.h"
+
+  export *
+  module * { export * }
+}
